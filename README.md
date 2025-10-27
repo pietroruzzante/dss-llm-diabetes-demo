@@ -55,6 +55,17 @@ Performances have been evaluated on 480 glucose traces, within the *ReplayBG* fr
 - Demonstrates **causal efficacy** of AI recommendations on virtual glucose traces.  
 - Bridges the gap between **AI interpretability** and **clinical reliability**.
 
+## 📈 Results
+
+To assess the clinical validity of LLM-generated decisions, a digital twin of each patient was simulated under different therapy scenarios:
+
+| Scenario | Description | median TIR (Time in Range) |
+|-----------|--------------|----------------------|
+| Baseline | Standard clinical treatment | 63.93% |
+| LLM Recommendation | Therapy adapted by DSS | 68.54% (+4.61%) |
+
+> 🧪 Results show that the DSS consistently improved glucose control metrics across virtual cohorts, demonstrating **measurable physiological benefit**.
+
 ---
 
 
@@ -65,19 +76,6 @@ Performances have been evaluated on 480 glucose traces, within the *ReplayBG* fr
 - **Digital Twin Simulation:** Based on the UVA/Padova T1D Simulator and ReplayBG
 - **Evaluation Metrics:** ΔTIR and hypoglycemia events
 - **Visualization:** Automated Ambulatory Glucose Profile (AGP) generation  
-
----
-
-## 📈 Validation Through Digital Twins
-
-To assess the clinical validity of LLM-generated decisions, a digital twin of each patient was simulated under different therapy scenarios:
-
-| Scenario | Description | median TIR (Time in Range) |
-|-----------|--------------|----------------------|
-| Baseline | Standard clinical treatment | 63.93% |
-| LLM Recommendation | Therapy adapted by DSS | 68.54% (+4.61%) |
-
-> 🧪 Results show that the DSS consistently improved glucose control metrics across virtual cohorts, demonstrating **measurable physiological benefit**.
 
 ---
 
