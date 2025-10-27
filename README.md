@@ -64,10 +64,10 @@ Performances have been evaluated on 480 glucose traces, within the *ReplayBG* fr
 
 To assess the clinical validity of LLM-generated decisions, a digital twin of each patient was simulated under different therapy scenarios:
 
-| Scenario | Description | median TIR (Time in Range) |
-|-----------|--------------|----------------------|
-| Baseline | Standard clinical treatment | 63.93% |
-| LLM Recommendation | Therapy adapted by DSS | 68.54% (+4.61%) (p<0.0001)|
+| Scenario | Description | median TIR (Time in Range) | Delta |
+|-----------|--------------|----------------------|----------------|
+| Baseline | Standard clinical treatment | 63.93% ||
+| LLM Recommendation | Therapy adapted by DSS | 68.54% | (+4.61%) (p<0.0001)|
 
 > 🧪 Results show that the DSS consistently improved glucose control metrics across virtual cohorts, demonstrating **measurable physiological benefit**.
 
