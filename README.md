@@ -29,13 +29,13 @@ The DSS follows a modular architecture based on three main layers:
    - Local LLM performs reasoning on patient context.  
    - Generates therapeutic suggestions (e.g., basal adjustment, bolus correction, carb ratio adaptation).  
    - Uses a domain-specific prompt structure and safety guardrails.
-   - 
+   
 3. **Output**  
    - A second LLM summarizes first LLM's reasoning for providing a brief and clear explanation to the patient.
    - Guardrails layer is responsible for detecting anomalous or dnagerous answers from the LLM and correcting them
 
+<img width="1496" height="1939" alt="DSS_schema" src="https://github.com/user-attachments/assets/4e4b3132-bc0e-4df3-91c6-e3b8df9021cc" />
 
-![Architecture Diagram](docs/architecture.png)
 
 ---
 
