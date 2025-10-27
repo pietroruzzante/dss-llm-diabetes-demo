@@ -117,6 +117,7 @@ This work lays the foundation for a new generation of **safe, data-driven decisi
 ## 👥 Authors & Credits
 
 **Author:** Pietro Ruzzante
+
 **Supervisor:** Prof. Giacomo Cappon  
 **Co-Supervisor:** Dott. Luca Cossu
 **University:** University of Padua, Department of Information Engineering  
@@ -124,14 +125,6 @@ This work lays the foundation for a new generation of **safe, data-driven decisi
 
 ---
 
-## 📚 References
-
-- ISPAD Clinical Practice Consensus Guidelines 2022: *Glycemic targets, insulin therapy, and diabetes technology*.  
-- ADA (2023). *Type 1 Diabetes Self-Care Manual*.  
-- Czupryniak et al., 2022. *Ambulatory Glucose Profile (AGP) in Daily Care of Patients with Diabetes*.  
-- UVA/Padova Type 1 Diabetes Simulator, FDA-accepted in-silico trial platform.  
-
----
 
 
 
