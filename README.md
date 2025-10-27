@@ -66,7 +66,7 @@ Performances have been evaluated on 480 glucose traces, within the *ReplayBG* fr
 
 To assess the clinical validity of LLM-generated decisions, a digital twin of each patient was simulated under different therapy scenarios:
 
-<img width="560" height="558" alt="Screenshot 2025-10-27 alle 21 35 21" src="https://github.com/user-attachments/assets/095db297-cc16-4215-9d9a-9e823af2f232" />
+<img width="560" height="549" alt="Screenshot 2025-10-27 alle 21 36 28" src="https://github.com/user-attachments/assets/473a82e7-5ef5-4c99-b428-17988b6cb322" />
 
 
 > 🧪 Results show that the DSS consistently improved glucose control metrics across virtual cohorts, demonstrating **measurable physiological benefit**.
