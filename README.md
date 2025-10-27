@@ -1,4 +1,4 @@
-# 💉 LLM-based Decision Support System for Type 1 Diabetes
+# LLM-based Decision Support System for Type 1 Diabetes
 
 ### Master Thesis Project — University of Padua  
 *Developed in collaboration with Prof. G. Cappon (Supervisor)*  
