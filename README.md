@@ -77,8 +77,8 @@ Performances have been evaluated on 480 glucose traces, within the *ReplayBG* fr
 
 
 **Best configuration:**  
-> *DeepSeek-R1-Distill-Llama-8B*  
-> achieved **+4.61 % ΔTIR** improvement,  
+> *DeepSeek-R1-Distill-Llama-8B showed the best improvements*  
+> In the best configuratin, it achieved **+4.61 % ΔTIR** improvement,  
 > showing that lightweight, local LLMs can deliver clinically relevant reasoning performance.
 
 To assess the clinical validity of LLM-generated decisions, a digital twin of each patient was simulated under different therapy scenarios:
