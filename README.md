@@ -44,6 +44,30 @@ The DSS follows a modular architecture based on three main layers:
 
 <img width="772" height="1000" alt="DSS_schema" src="https://github.com/user-attachments/assets/4e4b3132-bc0e-4df3-91c6-e3b8df9021cc" />
 
+## 🧠 LLM Models and Experimental Configurations
+
+Three different **Large Language Models (LLMs)** were evaluated as the reasoning core of the DSS:
+
+| Model | Parameters | Type |
+|--------|-------------|------|
+| **DeepSeek-R1-Distill-Qwen-1.5B** | 1.5 | Reasoning |
+| **Gemma-3-4b-instruct** | 4 | Instruct |
+| **DeepSeek-R1-Distill-Qwen-8B** | 8 | Reasoning |
+
+Each model was tested in **16 configurations**, resulting from the combination of:
+
+- 4 **prompting strategies** (baseline, AGP-guided, multi-context, chain-of-thought)  
+- 4 **safety/guardrail setups** (none, rule-based, dual-agent, hybrid)  
+
+→ **3 models × 16 configurations = 48 total test configurations**
+
+Evaluation was carried out through the *ReplayBG* and *UVA/Padova* simulators over **480 digital-twin glucose traces**,  
+measuring:
+
+- ΔTIR (change in Time-in-Range)  
+- Number of hypoglycemia events  
+- Consistency of reasoning  
+- Inference latency on local hardware (Mac M3, 16 GB RAM)
 
 ## 🧩 Technical Implementation
 
@@ -64,12 +88,15 @@ Performances have been evaluated on 480 glucose traces, within the *ReplayBG* fr
 
 ## 📈 Results
 
+
+**Best configuration:**  
+> *DeepSeek-R1-Distill-Llama-8B*  
+> achieved **+4.61 % ΔTIR** improvement,  
+> showing that lightweight, local LLMs can deliver clinically relevant reasoning performance.
+
 To assess the clinical validity of LLM-generated decisions, a digital twin of each patient was simulated under different therapy scenarios:
 
-
 <img width="560" height="114" alt="Screenshot 2025-10-27 alle 21 37 30" src="https://github.com/user-attachments/assets/924b6831-e37f-4b0d-b2c1-d102cf51bba8" />
-
-
 
 > 🧪 Results show that the DSS consistently improved glucose control metrics across virtual cohorts, demonstrating **measurable physiological benefit**.
 
