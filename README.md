@@ -43,7 +43,12 @@ The DSS follows a modular architecture based on three main layers:
 <img width="772" height="1000" alt="DSS_schema" src="https://github.com/user-attachments/assets/4e4b3132-bc0e-4df3-91c6-e3b8df9021cc" />
 
 
----
+## 🧩 Technical Implementation
+
+- **Framework:** Python, FastAPI, Docker  
+- **Model:** Quantized local LLM (DeepSeek and Gemma family)
+- **Digital Twin Simulation:** Based on the UVA/Padova T1D Simulator and ReplayBG
+- **Evaluation Metrics:** ΔTIR and hypoglycemia events
 
 ## Evaluation of performance
 This project introduces a **closed-loop validation** using **digital twins**, allowing not only to *evaluate* AI decisions but also to *simulate their physiological impact*.
@@ -68,16 +73,6 @@ To assess the clinical validity of LLM-generated decisions, a digital twin of ea
 
 ---
 
-
-## 🧩 Technical Implementation
-
-- **Framework:** Python, FastAPI, Docker  
-- **Model:** Quantized local LLM (DeepSeek and Gemma family)
-- **Digital Twin Simulation:** Based on the UVA/Padova T1D Simulator and ReplayBG
-- **Evaluation Metrics:** ΔTIR and hypoglycemia events
-- **Visualization:** Automated Ambulatory Glucose Profile (AGP) generation  
-
----
 
 ## 💡 Business & Integration Potential
 
