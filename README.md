@@ -70,9 +70,9 @@ The system’s outputs (advice, alerts, or summaries) align with:
 ## 🧩 Technical Implementation
 
 - **Framework:** Python, FastAPI, Docker  
-- **Model:** Quantized local LLM (optimized for offline medical reasoning)  
-- **Digital Twin Simulation:** Based on the UVA/Padova T1D Simulator  
-- **Evaluation Metrics:** ΔTIR, hypoglycemia risk, and insulin utilization efficiency  
+- **Model:** Quantized local LLM (DeepSeek and Gemma family)
+- **Digital Twin Simulation:** Based on the UVA/Padova T1D Simulator and ReplayBG
+- **Evaluation Metrics:** ΔTIR and hypoglycemia events
 - **Visualization:** Automated Ambulatory Glucose Profile (AGP) generation  
 
 ---
@@ -81,11 +81,10 @@ The system’s outputs (advice, alerts, or summaries) align with:
 
 To assess the clinical validity of LLM-generated decisions, a digital twin of each patient was simulated under different therapy scenarios:
 
-| Scenario | Description | ΔTIR (Time in Range) |
+| Scenario | Description | median TIR (Time in Range) |
 |-----------|--------------|----------------------|
-| Baseline | Standard clinical treatment | — |
-| LLM Recommendation | Therapy adapted by DSS | +8.2% |
-| Random Adjustment | Non-optimized control | −2.4% |
+| Baseline | Standard clinical treatment | 63.93% |
+| LLM Recommendation | Therapy adapted by DSS | 68.54% (+4.61%) |
 
 > 🧪 Results show that the DSS consistently improved glucose control metrics across virtual cohorts, demonstrating **measurable physiological benefit**.
 
