@@ -47,7 +47,7 @@ The DSS follows a modular architecture based on three main layers:
 
 ## 🧩 Technical Implementation
 
-- **Framework:** Python, FastAPI, Docker  
+- **Framework:** Python, Llama.Cpp, LangChain, FastAPI  
 - **Model:** Quantized local LLM (DeepSeek and Gemma family)
 - **Digital Twin Simulation:** Based on the UVA/Padova T1D Simulator and ReplayBG
 - **Evaluation Metrics:** ΔTIR and hypoglycemia events
