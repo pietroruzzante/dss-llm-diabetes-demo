@@ -25,12 +25,18 @@ The DSS follows a modular architecture based on three main layers:
    - Compatible with continuous glucose monitoring (CGM) devices following international standards (ISPAD/ADA).
    - An adaptive system is responsible for keeping memory of the past decisions made by the LLM for automatic CR/CF parameters adjusting
 
-2. **Decision Layer (LLM Core)**  
+2. **Decision Layer (LLM Core)**
+
+   - The DSS incorporates clinical reasoning based on:
+      - **ISPAD 2022 Guidelines** — Insulin therapy, glycemic targets, and pediatric diabetes management.  
+      - **ADA Standards of Care** — Self-management protocols and glucose goals.  
+      - **Ambulatory Glucose Profile (AGP)** metrics — used to evaluate time-in-range (TIR), hypoglycemia, and variability.
+     
    - Local LLM performs reasoning on patient context.  
    - Generates therapeutic suggestions (e.g., basal adjustment, bolus correction, carb ratio adaptation).  
    - Uses a domain-specific prompt structure and safety guardrails.
    
-3. **Output**  
+4. **Output**  
    - A second LLM summarizes first LLM's reasoning for providing a brief and clear explanation to the patient.
    - Guardrails layer is responsible for detecting anomalous or dnagerous answers from the LLM and correcting them
 
@@ -39,10 +45,9 @@ The DSS follows a modular architecture based on three main layers:
 
 ---
 
-## 🧬 Why Digital Twins Matter
-
-Traditional AI-based decision systems rely on retrospective data.  
+## Evaluation of performance
 This project introduces a **closed-loop validation** using **digital twins**, allowing not only to *evaluate* AI decisions but also to *simulate their physiological impact*.
+Performances have been evaluated on 480 glucose traces, within the *ReplayBG* framework, exploiting the concept of digital twin.
 
 **Innovation highlights:**
 - First DSS prototype to combine **LLMs** with **in-silico clinical validation**.  
@@ -52,21 +57,6 @@ This project introduces a **closed-loop validation** using **digital twins**, al
 
 ---
 
-## 📊 Clinical Knowledge Base
-
-The DSS incorporates clinical reasoning based on:
-- **ISPAD 2022 Guidelines** — Insulin therapy, glycemic targets, and pediatric diabetes management.  
-- **ADA Standards of Care** — Self-management protocols and glucose goals.  
-- **Ambulatory Glucose Profile (AGP)** metrics — used to evaluate time-in-range (TIR), hypoglycemia, and variability.
-
-The system’s outputs (advice, alerts, or summaries) align with:
-- HbA1c < 7.0%  
-- TIR > 70% (70–180 mg/dL)  
-- Hypoglycemia < 4% (<70 mg/dL)  
-- Glycemic variability (CV) ≤ 36%  
-*(as per ISPAD and ADA 2022 standards)*
-
----
 
 ## 🧩 Technical Implementation
 
