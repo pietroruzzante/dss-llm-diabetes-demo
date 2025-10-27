@@ -20,19 +20,20 @@ The system is designed for **integration into mobile or cloud-based healthcare p
 
 The DSS follows a modular architecture based on three main layers:
 
-1. **Data Acquisition Layer**  
+1. **Data Acquisition**  
    - Receives real-time patient data (e.g., CGM glucose, insulin delivery, meals, physical activity).  
    - Compatible with continuous glucose monitoring (CGM) devices following international standards (ISPAD/ADA).
+   - An adaptive system is responsible for keeping memory of the past decisions made by the LLM for automatic CR/CF parameters adjusting
 
 2. **Decision Layer (LLM Core)**  
-   - Local fine-tuned LLM performs reasoning on patient context.  
+   - Local LLM performs reasoning on patient context.  
    - Generates therapeutic suggestions (e.g., basal adjustment, bolus correction, carb ratio adaptation).  
    - Uses a domain-specific prompt structure and safety guardrails.
+   - 
+3. **Output**  
+   - A second LLM summarizes first LLM's reasoning for providing a brief and clear explanation to the patient.
+   - Guardrails layer is responsible for detecting anomalous or dnagerous answers from the LLM and correcting them
 
-3. **Validation Layer (Digital Twin Engine)**  
-   - Each decision is tested on a **physiological digital twin** of the patient.  
-   - The system simulates glucose trajectories to **verify** that the LLM’s recommendation actually improves glycemic outcomes (e.g., increased Time in Range).  
-   - Provides quantitative feedback for continual model refinement.
 
 ![Architecture Diagram](docs/architecture.png)
 
