@@ -54,20 +54,7 @@ Three different **Large Language Models (LLMs)** were evaluated as the reasoning
 | **Gemma-3-4b-instruct** | 4 | Instruct |
 | **DeepSeek-R1-Distill-Qwen-8B** | 8 | Reasoning |
 
-Each model was tested in **16 configurations**, resulting from the combination of:
-
-- 4 **prompting strategies** (baseline, AGP-guided, multi-context, chain-of-thought)  
-- 4 **safety/guardrail setups** (none, rule-based, dual-agent, hybrid)  
-
-→ **3 models × 16 configurations = 48 total test configurations**
-
-Evaluation was carried out through the *ReplayBG* and *UVA/Padova* simulators over **480 digital-twin glucose traces**,  
-measuring:
-
-- ΔTIR (change in Time-in-Range)  
-- Number of hypoglycemia events  
-- Consistency of reasoning  
-- Inference latency on local hardware (Mac M3, 16 GB RAM)
+Each model was tested in **16 configurations**, resulting in 48 total test configurations
 
 ## 🧩 Technical Implementation
 
