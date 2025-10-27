@@ -118,7 +118,7 @@ This work lays the foundation for a new generation of **safe, data-driven decisi
 
 ## 👥 Authors & Credits
 
-**Author:** Pietro Ruzzante 
+**Author:** Pietro Ruzzante
 **Supervisor:** Prof. Giacomo Cappon  
 **Co-Supervisor:** Dott. Luca Cossu
 **University:** University of Padua, Department of Information Engineering  
@@ -135,6 +135,5 @@ This work lays the foundation for a new generation of **safe, data-driven decisi
 
 ---
 
-2025 – Designed for responsible, human-centered AI in healthcare.
 
 
