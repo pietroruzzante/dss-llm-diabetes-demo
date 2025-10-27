@@ -89,8 +89,6 @@ Potential use cases:
 - Automated therapy review tools for clinicians  
 - Adaptive learning systems for diabetes management platforms  
 
----
-
 ## 🧭 Impact and Vision
 
 This work lays the foundation for a new generation of **safe, data-driven decision systems** in diabetes care — combining **AI reasoning** with **physiological modeling** to create truly intelligent and reliable tools for clinicians and patients.
