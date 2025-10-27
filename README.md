@@ -81,8 +81,8 @@ To assess the clinical validity of LLM-generated decisions, a digital twin of ea
 
 This DSS represents a **turnkey innovation opportunity** for MedTech and digital health companies:
 
-- 🩺 **Clinical Reliability** — built on validated ISPAD/ADA guidelines.  
-- 📱 **Integration-Ready** — deployable as a backend API for mobile apps or wearable systems.  
+- 🩺 **Clinical Reliability** — built on validated ISPAD/ADA guidelines and tested using digital twins.  
+- 📱 **Integration-Ready** — deployable as a backend API for mobile apps or wearable systems, using small LLM (< 10B parameters).  
 - 🔒 **Privacy by Design** — runs locally, without cloud dependency.  
 - ⚡ **Scalable Evaluation** — supports rapid testing of AI strategies through digital twin simulation.  
 - 🤖 **Explainable AI** — LLM outputs are interpretable, auditable, and medically grounded.  
