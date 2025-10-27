@@ -34,7 +34,7 @@ The DSS follows a modular architecture based on three main layers:
    - A second LLM summarizes first LLM's reasoning for providing a brief and clear explanation to the patient.
    - Guardrails layer is responsible for detecting anomalous or dnagerous answers from the LLM and correcting them
 
-<img width="1496" height="1939" alt="DSS_schema" src="https://github.com/user-attachments/assets/4e4b3132-bc0e-4df3-91c6-e3b8df9021cc" />
+<img width="1157" height="1500" alt="DSS_schema" src="https://github.com/user-attachments/assets/4e4b3132-bc0e-4df3-91c6-e3b8df9021cc" />
 
 
 ---
