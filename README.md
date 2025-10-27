@@ -14,6 +14,8 @@ Unlike conventional clinical decision tools, this DSS leverages **digital twin s
 
 The system is designed for **integration into mobile or cloud-based healthcare platforms**, enabling scalable, AI-assisted diabetes care that is both **clinically grounded** and **technologically robust**.
 
+<img width="962" height="345" alt="Screenshot 2025-10-27 alle 21 33 50" src="https://github.com/user-attachments/assets/65e9c8dd-8462-4403-bb0c-ff1db5949d92" />
+
 ---
 
 ## ⚙️ System Architecture
